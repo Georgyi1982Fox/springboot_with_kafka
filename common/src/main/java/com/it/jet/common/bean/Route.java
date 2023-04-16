@@ -13,6 +13,7 @@ import java.util.List;
 public class Route {
     private String boardName;
     private List<RoutePath> path = new ArrayList<RoutePath>();
+
     public boolean notAssigned(){
         return boardName == null;
     }

@@ -7,7 +7,7 @@ public class MessageConverter {
     public String extractCode(String data){
         return gson.fromJson(data, Message.class).getCode();
     }
-    public <T extends Message> T extractMessage(String data,Class<T> clazz){
+    public <T extends Message> T extractMessage(String data, Class<T> clazz){
         return gson.fromJson(data,clazz);
     }
     public String toJson(Object message){

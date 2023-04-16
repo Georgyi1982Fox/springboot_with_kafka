@@ -8,12 +8,11 @@ import java.util.List;
 @Getter
 @Setter
 @EqualsAndHashCode
-public class Airport {
+public class Airport{
     private String name;
     private List<String> boards = new ArrayList<String>();
     private int x;
     private int y;
-
     public void addBoard(String boardName){
         int ind = boards.indexOf(boardName);
         if (ind > 0) {
